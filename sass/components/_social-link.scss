@@ -1,0 +1,28 @@
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $blue-color;
+
+    }
+
+}
+
+.social-link__icon {
+    fill: $color-icon-command;
+
+    transition: fill 250ms $timing-function;
+
+    .social-link:hover &,
+    .social-link:focus & {
+        fill: $white-color;
+    }
+}

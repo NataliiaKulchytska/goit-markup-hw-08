@@ -1,0 +1,55 @@
+.label-check {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $base-text-color;
+
+    cursor: pointer;
+
+}
+.label-check__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.label-check__icon {
+    display: inline-block;
+
+    margin-right: 8px;
+    border: 2px solid $basic-title-color;
+    border-radius: 4px;
+
+    transition: background-color 250ms $timing-function,
+    border-color 250ms $timing-function;
+
+    .label-check__checkbox:checked ~ & {
+        border-color: transparent;
+        background-color: $blue-color;
+    
+    }
+}
+.label-check__link {
+    color: $blue-color;
+    margin-left: 5px;
+}
+
+.label-check__button {
+    display: block;
+
+    margin: 30px auto;
+    margin-bottom: 0;
+    padding: 10px 55px;
+
+}

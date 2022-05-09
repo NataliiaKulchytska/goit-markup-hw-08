@@ -1,0 +1,21 @@
+.section {
+    padding: 94px 0;
+
+    &--no-padding {
+        padding-top: 0;
+    }
+    &--title{
+        margin-top: 0;
+        margin-bottom: 50px;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: $basic-title-color;
+    }
+    &--discolored{
+        background-color: #F5F4FA;
+    }
+}
+
