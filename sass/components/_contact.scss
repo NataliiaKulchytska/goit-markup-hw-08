@@ -7,8 +7,8 @@
    transform: rotateX(180deg);
     list-style: none;
     @media screen and (min-width: 768px) {
-        display: flex;
         display: none;
+        display: flex;        
 
         margin-left: auto;
     }
@@ -104,7 +104,10 @@ transform: rotateX(180deg);
 }
 .contact__social-item{    
     
-   
+&:not(:first-child) {
+        padding-left: 10px;
+
+    }
     &:not(:last-child) {
         padding-right: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -120,13 +123,4 @@ transform: rotateX(180deg);
     line-height: 1.22;
     letter-spacing: 0.02em;
 
-    &:not(:last-child) {
-            padding-left: 10px;
-    
-        }
-    
-        // &:not(:last-child) {
-        //     padding-right: 10px;
-           
-        // }
 }
