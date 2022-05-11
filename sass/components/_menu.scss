@@ -1,0 +1,33 @@
+.menu{
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    width: 480px;
+    height: 796px;
+    
+
+    background-color: $white-color;
+
+    &.is-open{
+        display: block;
+    }
+}
+.menu__button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-color: transparent;
+    
+    &.icon-close{
+        display: none;
+    }
+    &.is-open .icon-close{
+        display: block;
+    }
+    &.is-open .icon-menu {
+        display: none;
+    }
+}

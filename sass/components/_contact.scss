@@ -1,24 +1,28 @@
 .contact {
-    display: flex;
-    margin-left: auto;
+    // display: block;
+    
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-
+   transform: rotateX(180deg);
     list-style: none;
-    // @media (max-width: 480px) {
-    //     display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        display: none;
+
+        margin-left: auto;
     }
 }
 .contact__item {
     position: relative;
-
+transform: rotateX(180deg);
     &:not(:last-child) {
         margin-right: 50px;
     }
 }
 .contact__link {
     display: flex;
+    flex-wrap: wrap-reverse;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -26,17 +30,28 @@
     color: $base-text-color;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
 
     transition: color 250ms $timing-function;
+@media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
 
+        font-size: 14px;
+        line-height: 1.14;
+        
+
+    }
     &:hover,
     &:focus {
         color: $blue-color;
     }
-    
+    &--tel{
+        color: rgba(33, 150, 243, 1);
+        font-size: 34px;
+        line-height: 1.18;
+    }
     &::after{
         position: absolute;
         left: 0;
@@ -61,6 +76,57 @@
    
 }
 .contact__icon {
-    margin-right: 10px;
-    fill: currentColor;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+            margin-right: 10px;
+            fill: currentColor;
+    
+    
+        }
+}
+.contact__social-list {
+     @extend %ul;
+
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      
+      
+      margin-top: 64px;   
+    @media screen and (min-width: 768px) {
+            display: none;
+            
+            
+    
+    
+        }
+}
+.contact__social-item{    
+    
+   
+    &:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    
+        }
+}
+
+.contact__social-link{
+    color: $blue-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+            padding-left: 10px;
+    
+        }
+    
+        // &:not(:last-child) {
+        //     padding-right: 10px;
+           
+        // }
 }

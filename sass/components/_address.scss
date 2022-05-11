@@ -1,6 +1,11 @@
 .address {
-    display: block;
+    display: block;    
+margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 
+    list-style: none;
     font-style: normal;
 }
 
@@ -8,19 +13,26 @@
 
 .address__item {
     position: relative;
+    
 
     &:not(:last-child) {
+        margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
         margin-bottom: 9px;
+    }
     }
 }
 
 .address__link {
+    display: inline-flex;
     color: $white-color;
-
+    align-items: center;
+    text-decoration: none;
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding: 0;
     font-weight: normal;
+    transition: color 250ms $timing-function;
 
     &--white {
         color: rgba(255, 255, 255, 0.6);
@@ -32,7 +44,9 @@
         color: $white-color;
 }
     
-   
+   @media screen and (min-width: 768px) {
+       display: block;
+   }
 }
 
 
