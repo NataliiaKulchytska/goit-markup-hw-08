@@ -1,28 +1,23 @@
 .contact {
-    // display: block;
+    @extend %ul;
+    display: none;    
     
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-   transform: rotateX(180deg);
-    list-style: none;
-    @media screen and (min-width: 768px) {
-        display: none;
-        display: flex;        
+    @media screen and (min-width: 768px) {        
+        display: flex;       
 
         margin-left: auto;
     }
 }
 .contact__item {
     position: relative;
-transform: rotateX(180deg);
+
     &:not(:last-child) {
         margin-right: 50px;
     }
 }
 .contact__link {
     display: flex;
-    flex-wrap: wrap-reverse;
+    
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -30,19 +25,12 @@ transform: rotateX(180deg);
     color: $base-text-color;
     text-decoration: none;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     transition: color 250ms $timing-function;
-@media screen and (min-width: 768px) {
-        flex-wrap: nowrap;
 
-        font-size: 14px;
-        line-height: 1.14;
-        
-
-    }
     &:hover,
     &:focus {
         color: $blue-color;
@@ -76,51 +64,8 @@ transform: rotateX(180deg);
    
 }
 .contact__icon {
-    display: none;
+    margin-right: 10px;
+    fill: currentColor;
 
-    @media screen and (min-width: 768px) {
-            margin-right: 10px;
-            fill: currentColor;
-    
-    
-        }
-}
-.contact__social-list {
-     @extend %ul;
-
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      
-      
-      margin-top: 64px;   
-    @media screen and (min-width: 768px) {
-            display: none;
-            
-            
-    
-    
-        }
-}
-.contact__social-item{    
-    
-&:not(:first-child) {
-        padding-left: 10px;
-
-    }
-    &:not(:last-child) {
-        padding-right: 10px;
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
-    
-        }
-}
-
-.contact__social-link{
-    color: $blue-color;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-
+   
 }
