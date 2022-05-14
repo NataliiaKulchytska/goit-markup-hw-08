@@ -1,4 +1,4 @@
-.client, .command, .mobile-social__list, .mobile-contacts__list, .mobile-menu, .contact, .nav__list, .logo--white {
+.project, .portfolio-button, .client, .command, .mobile-social__list, .mobile-contacts__list, .mobile-menu, .contact, .nav__list, .logo--white {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -763,13 +763,30 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 50px;
-  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.portfolio-button__item {
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-button__item {
+    margin-top: 0;
+  }
 }
 
 .portfolio-button__item:not(:last-child) {
@@ -811,15 +828,16 @@ img {
 }
 
 .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .project__item {
