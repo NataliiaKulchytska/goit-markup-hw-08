@@ -64,7 +64,7 @@
           </svg>
         </button>
 
-        <div class="menu js-menu-container is-open" id="menu">
+        <div class="menu js-menu-container" id="menu">
           <button
             type="button"
             class="menu__button js-close-menu"
@@ -193,19 +193,39 @@
           <h2 class="section--title">Чем мы занимаемся</h2>
           <ul class="cards-project">
             <li class="cards-project__item">
-              <img src="./images/box1.jpg" alt="Создание структуры" width="370" />
+              <picture>
+                <source
+                  srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
+                  media="(max-width:1140px)"
+                />
+                <img src="./images/box1.jpg" alt="Создание структуры" width="370" height="294" />
+              </picture>
               <div class="cards-project__thumb">
                 <h3 class="title cards-project__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="cards-project__item">
-              <img src="./images/box2.jpg" alt="Визуализация" width="370" />
+              <picture>
+                <source
+                  srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  media="(max-width:1140px)"
+                />
+                <img src="./images/box2.jpg" alt="Визуализация" width="370" height="294" />
+              </picture>
+
               <div class="cards-project__thumb">
                 <h3 class="title cards-project__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="cards-project__item">
-              <img src="./images/box3.jpg" alt="Цветовая гамма" width="370" />
+              <picture>
+                <source
+                  srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  media="(max-width:1140px)"
+                />
+                <img src="./images/box3.jpg" alt="Цветовая гамма" width="370" height="294" />
+              </picture>
+
               <div class="cards-project__thumb">
                 <h3 class="title cards-project__title">Дизайнерские решения</h3>
               </div>
@@ -220,7 +240,33 @@
           <h2 class="section--title">Наша команда</h2>
           <ul class="command">
             <li class="command__item">
-              <img src="./images/ИгорьДемьяненко.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="./images/ИгорьДемьяненко.jpg 1x, ./images/ИгорьДемьяненкоDesc2X.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ИгорьДемьяненкоTab1X.jpg 1x,
+                    ./images/ИгорьДемьяненкоTab2X.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ИгорьДемьяненкоMob1X.jpg 1x,
+                    ./images/ИгорьДемьяненкоMob2X.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./images/ИгорьДемьяненко.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="command__meta">
                 <h3 class="command__title">Игорь Демьяненко</h3>
                 <p class="command__text">Product Designer</p>
@@ -258,7 +304,22 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/ОльгаРепина.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="./images/ОльгаРепина.jpg 1x, ./images/ОльгаРепинаDesc2X.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/ОльгаРепинаTab1X.jpg 1x, ./images/ОльгаРепинаTab2X.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/ОльгаРепинаMob1X.jpg 1x, ./images/ОльгаРепинаMob2X.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img src="./images/ОльгаРепина.jpg" alt="Ольга Репина" width="270" height="260" />
+              </picture>
+
               <div class="command__meta">
                 <h3 class="command__title">Ольга Репина</h3>
                 <p class="command__text">Frontend Developer</p>
@@ -296,7 +357,27 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/НиколайТарасов.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/НиколайТарасов.jpg 1x, ./images/НиколайТарасовDesc2X.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/НиколайТарасовTab1X.jpg 1x, ./images/НиколайТарасовTab2X.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/НиколайТарасовMob1X.jpg 1x, ./images/НиколайТарасовMob2X.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./images/НиколайТарасов.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="command__meta">
                 <h3 class="command__title">Николай Тарасов</h3>
                 <p class="command__text">Marketing</p>
@@ -334,7 +415,27 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/МихаилЕрмаков.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/МихаилЕрмаков.jpg 1x, ./images/МихаилЕрмаковDesc2X.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/МихаилЕрмаковTab1X.jpg 1x, ./images/МихаилЕрмаковTab2X.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/МихаилЕрмаковMob1X.jpg 1x, ./images/МихаилЕрмаковMob2X.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./images/МихаилЕрмаков.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="command__meta">
                 <h3 class="command__title">Михаил Ермаков</h3>
                 <p class="command__text">UI Designer</p>

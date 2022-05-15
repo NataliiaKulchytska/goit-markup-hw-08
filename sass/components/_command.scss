@@ -5,6 +5,7 @@
 
     @media screen and (min-width:768px) {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
         }
     
@@ -26,7 +27,9 @@
 }
 
 .command__meta {
-    padding: 30px 122px 24px 122px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
