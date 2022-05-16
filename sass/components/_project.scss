@@ -32,7 +32,9 @@
 
 .project__link {
     
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
 
     transition: box-shadow 250ms $timing-function;
@@ -55,8 +57,7 @@
     top: 0;
     left: 0;
     
-    margin: 0;
-   
+    margin: 0;   
     padding: 77px 24px;
 
     font-size: 18px;
