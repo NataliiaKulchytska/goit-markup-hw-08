@@ -7,21 +7,38 @@
     padding-bottom: 60px;    
     background-color: #2F303A;
     text-align: center;
+    // @media screen and (min-width:768px){
+    //     flex-wrap: wrap;
+    // }
     
     @media screen and (min-width:1200px){
         display: flex;}
         
 }
 
-.footer__container {
-    
+.footer__container {    
     
     @media screen and (min-width:768px) {
         display: inline-flex;
+        flex-wrap: wrap;
         align-items: baseline;}
 }
+.footer__adress-block{
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: inline-block;
+        margin-left: 76px;
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+}
 .footer__group {
-    text-align: center;
+    
+    // @media screen and (min-width: 768px) {
+    //             display: inline-block;
+    //             vertical-align: top;
+    //             margin-top: 10px;
+    
+    //     }
     @media screen and (min-width: 1200px) {
         margin-left: 70px;    
     
@@ -29,15 +46,15 @@
 }
 .footer__title {
     display: block;
-    margin-top: 60px;
+    
     margin-bottom: 20px;
 
     color: $white-color;    
 
-    @media screen and (min-width: 1200px){
-    margin-top: 0;   
+    // @media screen and (min-width: 1200px){
+    
 
-    }
+    // }
 }
 .footer__link--greey {
     background-color: rgba(255, 255, 255, 0.1);
@@ -46,14 +63,30 @@
     fill: $white-color;
 }
 .footer__form {
+    @media screen and (min-width: 768px) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 450px;
+        }
     
 @media screen and (min-width: 1200px) {
      margin-left: 93px;
-    
+     margin-right: 0;    
     
         }
 }
 
+.footer__position{
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+       display: flex;      
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+            @media screen and (min-width: 1200px) {
+display: flex;
+            }
+}
 .footer__input {
     width: 100%;    
     padding: 15px 16px;

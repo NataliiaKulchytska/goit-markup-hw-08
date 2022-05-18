@@ -9,9 +9,11 @@
             justify-content: center;
         }
     
-    // @media screen and (min-width:1200px) {
-
-    // }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 .command__item:not(:last-child) {
     margin-bottom: 30px;

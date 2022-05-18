@@ -1,17 +1,19 @@
 .nav {
-    display: none;
+    display: block;
     
   @media screen and (min-width: 768px) {
         display: flex;
+        align-items: center;
 
     }
     }
 
 .nav__list {   
     @extend %ul;      
-   
+   display: block;
     text-decoration: none;
     
+    z-index: 20;
 
 @media screen and (min-width: 768px) {
         display: flex;
@@ -19,7 +21,13 @@
 
     }
 }
-
+.nav__item{
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+            margin-bottom: 0px;
+    
+        }
+}
 .nav__item:not(:last-child) {    
 
     @media screen and (min-width: 768px) {        
@@ -30,8 +38,8 @@
 .nav__link {
     position: relative;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     color: $basic-title-color;
     text-decoration: none;
@@ -47,6 +55,9 @@
     font-size: 14px;
     line-height: 1.14;
 
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     }
     &:hover,
     &:focus {
@@ -57,7 +68,7 @@
         // position: relative;
         color: $blue-color;
     }
-   
+   @media screen and (min-width: 768px) {
     &--active::after {
         position: absolute;
         bottom: 0;
@@ -70,5 +81,5 @@
         background-color: $blue-color;
     }
     
-    
+}
 }

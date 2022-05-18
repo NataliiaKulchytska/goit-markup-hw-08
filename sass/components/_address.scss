@@ -1,12 +1,15 @@
 .address {
     display: block;    
-margin-left: auto;
+    margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-
+    text-align: center;
     list-style: none;
     font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-weight: normal;
 }
 
 
@@ -26,12 +29,11 @@ margin-left: auto;
 .address__link {
     display: inline-flex;
     color: $white-color;
-    align-items: center;
+    
     text-decoration: none;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+   
     padding: 0;
-    font-weight: normal;
+    
     transition: color 250ms $timing-function;
 
     &--white {

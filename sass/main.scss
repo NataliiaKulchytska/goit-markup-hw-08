@@ -1,8 +1,10 @@
 @import './utils/variables';
 @import './utils/placeholder';
 @import './utils/breakpoints';
+@import './utils/hidden';
 
 @import './base/tags';
+
 @import './components/container';
 @import './components/section';
 @import './components/header';
@@ -14,8 +16,6 @@
 
 @import './components/hero';
 @import './components/button';
-
-@import './utils/hidden';
 
 @import './components/advantage';
 @import './components/title';

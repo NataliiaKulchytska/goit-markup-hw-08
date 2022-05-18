@@ -1,32 +1,42 @@
 .contact {
     @extend %ul;
-    display: none;    
+    display: block;
     
-    @media screen and (min-width: 768px) {        
-        display: flex;       
-
-        margin-left: auto;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {        
+        display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            justify-content: center;
     }
 }
 .contact__item {
     position: relative;
-
-    &:not(:last-child) {
-        margin-right: 50px;
+    margin-bottom: 32px;
+        margin-left: 0;
+@media(min-width: 768px) {
+        display: flex;
+        align-items: center;
     }
+
+    @media(min-width: 1200px) {
+    &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+    
 }
 .contact__link {
     display: flex;
     
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     color: $base-text-color;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 34px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
 
     transition: color 250ms $timing-function;
@@ -35,11 +45,19 @@
     &:focus {
         color: $blue-color;
     }
-    &--tel{
-        color: rgba(33, 150, 243, 1);
-        font-size: 34px;
-        line-height: 1.18;
-    }
+        @media(min-width: 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            font-size: 14px;
+            line-height: 1.14;
+        }
+    
+        @media(min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    
     &::after{
         position: absolute;
         left: 0;
@@ -61,11 +79,21 @@
         border-radius: 2px;        
         
     }
-   
+   &--tel {
+       color: rgba(33, 150, 243, 1);
+       
+   }
 }
 .contact__icon {
-    margin-right: 10px;
-    fill: currentColor;
+    display: none;
+    @media(min-width: 768px) {
+            
+            margin-right: 10px;
+    
+            fill: currentColor;
+            cursor: pointer;
+        }
+    
 
    
 }
