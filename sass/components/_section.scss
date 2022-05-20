@@ -2,13 +2,7 @@
     padding: 60px 0;    
     
    
-    &--no-padding {
-        padding-top: 0;
-
-        @media screen and  (max-width: 1199px){
-            display: none;
-        }
-    }
+    
     &--title{
         margin-top: 0;
         margin-bottom: 30px;
@@ -19,7 +13,7 @@
         text-align: center;
         color: $basic-title-color;
       
-        @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
             margin-bottom: 50px;
 
             font-size: 36px;
@@ -29,8 +23,20 @@
     &--discolored{
         background-color: #F5F4FA;
       }          
-                  @media screen and (min-width:1200px) {
-                      padding: 94px 0;
+@media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
                   }
+    &--no-padding {                
+                
+        @media screen and (min-width:1200px) {
+                padding-top: 0;
+                                      }
+        }
 }
 
+.section--no-padding{
+@media screen and (max-width: 1199px) {
+        display: none;
+    }
+}

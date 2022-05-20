@@ -49,6 +49,7 @@
 }
 .mobile-social__list {
         @extend %ul;
+        
     @media screen and (max-width: 767px){
         display: flex;        
         align-items: center;
