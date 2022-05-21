@@ -379,8 +379,6 @@ img {
     height: 100%;
     padding: 48px 40px;
     margin: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
     background-color: #ffffff;
     z-index: 10;
   }
