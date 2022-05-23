@@ -37,12 +37,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 320px;
-}
-@media (min-width: 480px) and (max-width: 767px) {
-  .container {
-    max-width: 480px;
-  }
+  max-width: 480px;
 }
 @media (min-width: 768px) {
   .container {
@@ -175,8 +170,6 @@ img {
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  padding-top: 16px;
-  padding-bottom: 16px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -374,15 +367,16 @@ img {
 
 .menu-mobile {
   display: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-top: 48px;
 }
 @media screen and (max-width: 767px) {
   .menu-mobile {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    min-height: 796px;
-    padding: 48px 40px;
     margin: 0;
     background-color: #ffffff;
     z-index: 10;
