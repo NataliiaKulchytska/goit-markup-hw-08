@@ -39,7 +39,7 @@ img {
   padding-right: 15px;
   max-width: 320px;
 }
-@media (min-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .container {
     max-width: 480px;
   }
@@ -1064,11 +1064,6 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 1;
   visibility: visible;
-}
-@media screen and (min-width: 768px) {
-  .portfolio-thumb__text-hover {
-    padding: 63px 24px;
-  }
 }
 
 .portfolio-thumb__containers {

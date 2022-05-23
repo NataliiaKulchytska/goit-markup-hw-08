@@ -4,7 +4,8 @@
     padding-left: 15px;
     padding-right: 15px;
     max-width: 320px;
-@media (min-width: 480px) {
+    
+@media (min-width: 480px) and (max-width:767px) {
         max-width: 480px;
     }
    
