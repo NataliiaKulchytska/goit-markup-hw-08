@@ -1233,7 +1233,7 @@ img {
 }
 
 .footer__input {
-  min-width: 358px;
+  min-width: 300px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1249,6 +1249,11 @@ img {
 }
 .footer__input:focus {
   border: 1px solid #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    min-width: 358px;
+  }
 }
 
 .footer__btn {
