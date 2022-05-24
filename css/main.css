@@ -1,4 +1,4 @@
-.project, .portfolio-button, .client, .command, .advantage, .mobile-social__list, .contact, .nav__list {
+.project, .portfolio-button, .client, .social-network, .command, .advantage, .mobile-social__list, .contact, .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -142,6 +142,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 0;
     margin-left: 88px;
   }
 }
@@ -763,6 +764,7 @@ img {
 .command__meta {
   padding-top: 30px;
   padding-bottom: 24px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .command__meta {
@@ -776,7 +778,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   color: #212121;
 }
 
@@ -786,7 +787,6 @@ img {
   color: #757575;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .social-network {
@@ -796,9 +796,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .social-network__item:not(:last-child) {
@@ -1516,6 +1513,11 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .label-check {
+    display: inline-block;
+  }
 }
 @media screen and (min-width: 768px) {
   .label-check {

@@ -39,7 +39,7 @@
 .command__meta {
     padding-top: 30px;
     padding-bottom: 24px;   
-    
+    text-align: center;
     
 @media screen and (min-width:1200px) {
         padding: 30px;
@@ -51,7 +51,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
+    
     color: $basic-title-color;
 }
 
@@ -62,5 +62,5 @@
     color: $base-text-color;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
+    
 }

@@ -17,7 +17,7 @@
 
 @media screen and (min-width: 768px) {
         display: flex;
-        
+        z-index: 0;
         margin-left: 88px;
 
     }
@@ -50,8 +50,7 @@
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    // padding-top: 16px;
-    // padding-bottom: 16px;
+    
 
     transition: color 250ms $timing-function;
 

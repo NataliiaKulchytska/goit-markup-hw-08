@@ -1,9 +1,8 @@
 .social-network {
+    @extend %ul;
     display: flex;
     justify-content: center;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
+    
 }
 
 .social-network__item:not(:last-child) {
