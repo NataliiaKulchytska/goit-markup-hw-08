@@ -3,9 +3,12 @@
         display: flex;
         flex-wrap: wrap;
         
-   
+@media screen and (min-width: 320px) and (max-width: 767px){
+    justify-content: space-around;
+}
 @media screen and (min-width: 768px) {        
         margin: -15px
+        
         }
 @media screen and (min-width: 1200px) {
         align-items: center;
@@ -58,6 +61,7 @@
     position: relative;
              
     overflow: hidden;
+ 
 }
 
 .portfolio-thumb__text-hover {
@@ -91,7 +95,10 @@
         opacity: 1;
         visibility: visible;
     }
-
+ @media screen and (min-width: 320px) and (max-width:479px) {
+    font-size: 15px;
+        
+ }
 }
 .portfolio-thumb__containers {
     
